@@ -1,0 +1,24 @@
+{
+  "name": "drop/module-is-path-in-directories-optimizer",
+  "description": "Backport to Magento 2.2 of MAGETWO-96314: Fix performance on MAGETWO-81469 commit",
+  "type": "magento2-module",
+  "license": "proprietary",
+  "authors": [
+    {
+      "email": "e.pascucci@drop.it",
+      "name": "Enrico Pascucci"
+    }
+  ],
+  "require": {
+    "magento/product-community-edition": "2.2.*"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Drop\\IsPathInDirectoriesOptimizer\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
